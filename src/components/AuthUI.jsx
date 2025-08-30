@@ -11,8 +11,9 @@ export default function AuthUI({ onLogin, onSignup }) {
   };
 
   return (
-    <div className="max-w-sm mx-auto mt-20 p-6 bg-white rounded-2xl shadow-xl border">
-      <h3 className="text-xl font-bold text-center mb-4">
+    <div className="flex items-center justify-center">
+    <div className="auth-container  bg-white rounded-2xl shadow-xl ">
+      <h3 className="text-xl text-indigo-600 font-bold text-center mb-4">
         {mode === "login" ? "Login" : "Sign Up"}
       </h3>
       <form onSubmit={submit} className="flex flex-col gap-3">
@@ -37,7 +38,7 @@ export default function AuthUI({ onLogin, onSignup }) {
           onChange={(e) => setForm({ ...form, password: e.target.value })}
           className="p-2 border rounded-lg"
         />
-        <button className="bg-indigo-500 text-white py-2 rounded-lg">
+        <button className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white py-2 rounded-lg">
           {mode === "login" ? "Login" : "Sign Up"}
         </button>
       </form>
@@ -47,6 +48,7 @@ export default function AuthUI({ onLogin, onSignup }) {
       >
         {mode === "login" ? "New user? Sign up" : "Already have account? Login"}
       </button>
+    </div>
     </div>
   );
 }

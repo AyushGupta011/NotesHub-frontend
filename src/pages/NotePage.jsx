@@ -62,7 +62,7 @@ export default function NotesPage({
 }) {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
-
+const [isEditing, setIsEditing] = useState(false);
   const [editingNoteId, setEditingNoteId] = useState(null);
   const [editingTitle, setEditingTitle] = useState("");
   const [editingContent, setEditingContent] = useState("");
@@ -78,6 +78,7 @@ export default function NotesPage({
     setEditingNoteId(note._id);
     setEditingTitle(note.title);
     setEditingContent(note.content);
+     setIsEditing(true);
   };
 
   const handleSaveEdit = () => {
@@ -92,6 +93,7 @@ export default function NotesPage({
   };
 
   const handleCancelEdit = () => {
+    setIsEditing(false);
     setEditingNoteId(null);
     setEditingTitle("");
     setEditingContent("");
@@ -101,14 +103,14 @@ export default function NotesPage({
     <div className="notepage-container p-8 max-w-4xl mx-auto">
 
 
-      <NoteInput className="notepage-input"
+      {/* <NoteInput className="notepage-input"
         title={title}
         content={content}
         setTitle={setTitle}
         setContent={setContent}
         onSave={handleAdd}
         onLogout={logout}
-      />
+      /> */}
 
       <NotesList
         notes={notes}

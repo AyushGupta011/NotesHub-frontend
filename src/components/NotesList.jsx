@@ -5,7 +5,7 @@ export default function NotesList({
   notes, onDelete,onEdit,onCancelEdit,editingNoteId,editingTitle,setEditingTitle,setEditingContent,editingContent,onSaveEdit,onDownload 
 }) {
   return (
-    <div className="mt-10 grid md:grid-cols-2 gap-6">
+    <div className="notelist-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center p-6">
       {notes.map((n) => (
         <NoteCard 
           key={n._id} 

@@ -18,7 +18,7 @@ export default function NoteCard({
 
   return (
     <motion.div
-      className="bg-white border p-6 rounded-3xl shadow-lg hover:shadow-xl transition"
+      className="notecard-container bg-white border p-6 rounded-3xl shadow-lg hover:shadow-xl transition"
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
     >
@@ -38,13 +38,13 @@ export default function NoteCard({
           />
           <div className="flex gap-3 mt-4">
             <button
-              className="px-4 py-1 bg-green-500 text-white rounded-xl"
+              className="px-4 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white rounded-xl"
               onClick={onSaveEdit}
             >
               💾 Save
             </button>
             <button
-              className="px-4 py-1 bg-gray-500 text-white rounded-xl"
+              className="px-4 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white rounded-xl"
               onClick={onCancelEdit}
             >
               ❌ Cancel
@@ -63,19 +63,19 @@ export default function NoteCard({
 
           <div className="flex gap-3 mt-4">
             <button
-              className="px-4 py-1 bg-green-500 text-white rounded-xl"
+              className="px-4 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white rounded-xl"
               onClick={() => onDownload(note)}
             >
               📄 PDF
             </button>
             <button
-              className="px-4 py-1 bg-red-500 text-white rounded-xl"
+              className="px-4 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white rounded-xl"
               onClick={() => onDelete(note._id)}
             >
               ❌ Delete
             </button>
             <button
-              className="px-4 py-1 bg-blue-500 text-white rounded-xl"
+              className="px-4 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white rounded-xl"
               onClick={() => onEdit(note)}
             >
               ✏️ Edit
