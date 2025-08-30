@@ -1,0 +1,62 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  
+}
+
+.navbar-container{
+    
+    width:100%;
+    display: flex;
+    gap: 25rem;
+    justify-content: space-around;
+    
+    height: 5rem;
+}
+.navbar-container h1{
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color:indigo;
+}
+.notepage-container{
+    align-items: center;
+    width: 100%;
+    display: flex;
+    
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+}
+.welcome-msg{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+.welcome-msg h2{
+    font-size: 1.5rem;
+    color: indigo;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.welcome-msg h3{
+    font-size: 1.2rem;
+    color: indigo;
+    font-weight: 600;
+}
+.noteinput-conatiner{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
