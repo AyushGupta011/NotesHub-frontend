@@ -11,7 +11,7 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "homepage": "https://ayushgupta011.github.io/NotesHub-frontend",
+  "homepage": "https://ayushgupta011.github.io/NotesHub-frontend/",
   
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
