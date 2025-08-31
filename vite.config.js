@@ -8,5 +8,6 @@ export default defineConfig({
     tailwindcss()
   ],
   server:{port:5173},
+   base: "/NotesHub-Frontend/",  
   
 })
