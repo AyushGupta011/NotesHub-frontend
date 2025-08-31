@@ -1,5 +1,4 @@
 {
-  "homepage": "https://github.com/AyushGupta011/NotesHub-frontend",
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
@@ -12,6 +11,8 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "homepage": "https://ayushgupta011.github.io/NotesHub-frontend",
+  
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
     "axios": "^1.11.0",
