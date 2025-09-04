@@ -7,6 +7,8 @@ import Navbar from "./components/Navbar";
 import "../src/App.css"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NoteInput from "./components/NoteInput";
+import ExcalidEditor from "./pages/ExcalidEditor";
+import ExcalidrawPage from "./pages/ExcalidrawPage";
 
 
 
@@ -185,7 +187,8 @@ const fetchNotes = async () => {
         <AuthUI onLogin={login} onSignup={signup} />
       ) : (
         <Routes>
-          <Route path="/" />
+          <Route path="/canvas" element={<ExcalidEditor/>} />
+          <Route path="/whitepage" element={<ExcalidrawPage/>}/>
           <Route
             path="/noteslist"
             element={

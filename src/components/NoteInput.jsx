@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function NoteInput({ title, content, setTitle, setContent, onSave,createNote, onLogout }) {
   return (
 
-    <div className="flex p-10 items-center justify-center">
+    <div className="input-container flex p-10 items-center justify-center">
     <div
       className="noteinput-container bg-white rounded-2xl p-6 shadow-xl mt-8"
       initial={{ opacity: 0, y: 40 }}
