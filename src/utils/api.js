@@ -1,7 +1,7 @@
 import axios from "axios";
 // const API_BASE = process.env.REACT_APP_API_URL;
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || "https://noteshub-backend-cd3h.onrender.com/",
+  baseURL: import.meta.env.VITE_API_URL || "https://noteshub-backend-cd3h.onrender.com/"||"http://localhost:5050",
    withCredentials: true,
 });
 
