@@ -1,33 +1,7 @@
-
-// import axios from "axios";
-
-// const api = axios.create({
-//   baseURL:"http://localhost:5050",
-// //   withCredentials: true
-// });
-
-// export function attachToken(token) {
-//   api.interceptors.request.use((req) => {
-//   const token = localStorage.getItem("token"); 
-//   console.log("Attaching token:", token); 
-//   if (token) {
-//     api.defaults.headers.common["Authorization"] = `Bearer ${token}`;
-//   } else {
-//     delete api.defaults.headers.common["Authorization"];
-//   }  // ✅ must match key name
-  
-//   return req;
-// });
-
-  
-// }
-
-// export default api;
-
 import axios from "axios";
 // const API_BASE = process.env.REACT_APP_API_URL;
 const api = axios.create({
-  baseURL: "http://localhost:5050",
+  baseURL: process.env.REACT_APP_API_URL || "https://noteshub-backend-cd3h.onrender.com/" || "http://localhost:5050",
    withCredentials: true,
 });
 
