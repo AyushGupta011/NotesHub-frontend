@@ -11,7 +11,7 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "homepage": "https://ayushgupta011.github.io/NotesHub-frontend/",
+  
   "dependencies": {
     "@excalidraw/excalidraw": "^0.18.0",
     "@tailwindcss/vite": "^4.1.12",
